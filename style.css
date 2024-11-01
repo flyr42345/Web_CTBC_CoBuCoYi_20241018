@@ -3,20 +3,30 @@
     /* m0+p0 */
     margin: 0;
     padding: 0;
-    color: red;
+    color: #333;
 }
 body{
     /* background: #000; */
 }
 /* 導覽列 */
+nav{
+    /* 定位:固定 */
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
 #nav{
     display: grid;
     grid-template-columns: 30% 50% 20%;
     width: 800px;
     /* background: #333; */
     margin: 35px auto;
-    /* 定位:固定 */
-    position: fixed;
+}
+#logo img{
+    width: 400px;
+    position: absolute;
+    right: 1300px;
+    top: 30px;
 }
 a{
     color: white;
@@ -29,7 +39,7 @@ a{
 }
 /* 滑入 */
 a:hover{
-    color: #E0302A;
+    color: red;
 }
 #link{
     /* 靠右對齊 */
@@ -39,7 +49,7 @@ a:hover{
 #banner{
     background-image: url(./img/karsten-wurth-UbGYPMbMYP8-unsplash.jpg);
     width: 100%;
-    height: 1280px;
+    height: 100vh;
 }
 /* 內容區塊 */
 .content{
@@ -85,6 +95,7 @@ h1{
 .card h2{
     text-align: center;
     padding: 10px 0 0;
+    font-size: 22px;
 }
 .card h4{
     text-align: center;
@@ -152,10 +163,33 @@ h1{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 30px;
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
 }
 #idea-pic img{
     width: 100%;
     border: 8px solid #fff;
+}
+#idea-content{
+    line-height: 3;
+    letter-spacing: 10px;
+}
+#idea-content a{
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    transition: 0.5s;
+    font-size: 14px;
+}
+#idea-content a:hover{
+    background-color: #333;
+    color: #fff;
+}
+footer{
+    border-image: url(./img/paper.png);
+    height: 150px;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #555;
 }
